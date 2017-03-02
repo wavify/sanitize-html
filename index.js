@@ -281,7 +281,7 @@ function sanitizeHtml(html, options, _recursing) {
     if (typeof(s) !== 'string') {
       s = s + '';
     }
-    return s.replace(/\&/g, '&amp;').replace(/</g, '&lt;').replace(/\>/g, '&gt;').replace(/\"/g, '&quot;');
+    return s;
   }
 
   function naughtyHref(name, href) {
