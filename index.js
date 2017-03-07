@@ -268,8 +268,6 @@ function sanitizeHtml(html, options, _recursing) {
          // Already output />
          return;
       }
-
-      result += "</" + name + ">";
     }
   }, options.parser);
   parser.write(html);
